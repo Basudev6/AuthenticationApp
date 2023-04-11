@@ -39,17 +39,22 @@
         />
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="350dp"
-        android:layout_height="60dp"
-        app:passwordToggleEnabled="true">
+        android:layout_height="50dp"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="false"
+        >
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Enter Password"
-            android:layout_marginTop="30dp"
-            android:paddingLeft="10dp"
             android:inputType="textPassword"
-            android:background="@drawable/edit_text"/>
+            android:paddingLeft="10dp"
+            android:singleLine="false"
+            android:background="@drawable/edit_text"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
 <!--    <EditText-->

@@ -18,44 +18,60 @@
         android:textStyle="bold"
         android:textColor="@color/black"/>
     <EditText
+        android:id="@+id/signup_email"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
-        android:hint="Enter Your Username"
+        android:hint="Enter Your Email"
         android:inputType="textEmailAddress"
         android:textColor="@color/black"
         android:background="@drawable/edit_text"
         android:paddingLeft="10dp"
         />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="350dp"
         android:layout_height="50dp"
+        app:passwordToggleEnabled="true"
         android:layout_marginTop="20dp"
-        android:hint="Enter Your Email"
-        android:inputType="textPassword"
-        android:textColor="@color/black"
-        android:background="@drawable/edit_text"
-        android:paddingLeft="10dp"/>
-    <EditText
+        app:hintEnabled="false"
+        >
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:singleLine="false"
+            android:background="@drawable/edit_text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="350dp"
         android:layout_height="50dp"
+        app:passwordToggleEnabled="true"
         android:layout_marginTop="20dp"
-        android:hint="Enter Your Phone Number"
-        android:inputType="textPassword"
-        android:textColor="@color/black"
-        android:background="@drawable/edit_text"
-        android:paddingLeft="10dp"/>
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:hint="Enter Your Password"
-        android:inputType="textPassword"
-        android:textColor="@color/black"
-        android:background="@drawable/edit_text"
-        android:paddingLeft="10dp"/>
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="false"
+        >
+
+        <EditText
+            android:id="@+id/signup_cpassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:singleLine="false"
+            android:background="@drawable/edit_text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
+        android:id="@+id/btn_signup"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:text="Signup"
@@ -64,7 +80,6 @@
         android:textAllCaps="false"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
-        android:onClick="Signup"
         />
     <LinearLayout
         android:layout_width="match_parent"
